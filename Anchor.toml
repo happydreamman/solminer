@@ -1,0 +1,21 @@
+[features]
+seeds = false
+
+[programs.localnet]
+solminer = "JA9S2YDFqL9RbB71dmvJQjtzd2mr9tZC8psD9gYTdnbn"
+
+[programs.devnet]
+solminer = "JA9S2YDFqL9RbB71dmvJQjtzd2mr9tZC8psD9gYTdnbn"
+
+[programs.mainnet]
+solminer = "JA9S2YDFqL9RbB71dmvJQjtzd2mr9tZC8psD9gYTdnbn"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "localnet"
+wallet = "./test-keypair.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/solminer.ts"
